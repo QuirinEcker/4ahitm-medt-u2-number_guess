@@ -25,7 +25,6 @@ class ViewController: UIViewController {
             model.gameWon = false
         }
         
-        print(model.secretNumber)
         let guessNumber = Int(guessNumberField.text!)!
         
         if guessNumber == model.secretNumber {
