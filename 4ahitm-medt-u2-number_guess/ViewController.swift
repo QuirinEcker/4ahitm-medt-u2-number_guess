@@ -20,10 +20,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func guess(_ sender: Any) {
+        if model.gameWon == true {
+            model.resetModel()
+            model.gameWon = false
+        }
+        
         print(model.secretNumber)
         let guessNumber = Int(guessNumberField.text!)!
         
         if guessNumber == model.secretNumber {
+            model.gameWon = true
             performSegue(withIdentifier: "win", sender: self)
         } else {
             model.guesses.append(guessNumber)
