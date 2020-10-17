@@ -52,7 +52,7 @@
                     <connections>
                         <outlet property="guessNumberField" destination="wkY-pE-SCT" id="OlF-WR-6Kj"/>
                         <outlet property="hintText" destination="aWl-mB-dSN" id="fmb-Rg-GOt"/>
-                        <segue destination="jBI-cm-z2F" kind="show" identifier="guess" id="hzD-Dq-Ywg"/>
+                        <segue destination="1UR-dv-roB" kind="show" identifier="win" id="LDU-y1-gEQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,6 +87,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMo-gq-Hct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="599" y="78"/>
+        </scene>
+        <!--Win View Controller-->
+        <scene sceneID="oQx-5X-Fd1">
+            <objects>
+                <viewController id="1UR-dv-roB" customClass="WinViewController" customModule="_ahitm_medt_u2_number_guess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTL-a2-r0X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You guessed the number!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zh-VX-geR">
+                                <rect key="frame" x="109.5" y="410.5" width="195.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-dd-6Sg">
+                                <rect key="frame" x="178.5" y="433" width="57" height="30"/>
+                                <state key="normal" title="guesses"/>
+                                <connections>
+                                    <action selector="showGuesses:" destination="1UR-dv-roB" eventType="touchUpInside" id="DP6-ot-JgR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6zh-VX-geR" firstAttribute="centerY" secondItem="HTL-a2-r0X" secondAttribute="centerY" id="BIO-q8-qfI"/>
+                            <constraint firstItem="6U1-dd-6Sg" firstAttribute="top" secondItem="6zh-VX-geR" secondAttribute="bottom" constant="1.5" id="dgS-CJ-v2L"/>
+                            <constraint firstItem="6zh-VX-geR" firstAttribute="centerX" secondItem="HTL-a2-r0X" secondAttribute="centerX" id="dhm-ob-Arz"/>
+                            <constraint firstItem="6U1-dd-6Sg" firstAttribute="centerX" secondItem="HTL-a2-r0X" secondAttribute="centerX" id="nFD-nh-QQN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="29T-FB-bUa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nv4-mU-Oja"/>
+                    <connections>
+                        <segue destination="jBI-cm-z2F" kind="showDetail" identifier="guess" id="yoC-K7-oDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yA-nT-CfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-125" y="722"/>
         </scene>
     </scenes>
 </document>

@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func guess(_ sender: Any) {
+        print(model.secretNumber)
         let guessNumber = Int(guessNumberField.text!)!
         
         if guessNumber == model.secretNumber {
-            print("number guessed")
-            performSegue(withIdentifier: "guess", sender: self)
+            performSegue(withIdentifier: "win", sender: self)
         } else {
             model.guesses.append(guessNumber)
             hintText.text = guessNumber > model.secretNumber ? "less" : "more"
@@ -34,8 +34,8 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "guess" {
-            let tableViewController = segue.destination as! TableViewController
+        if segue.identifier == "win" {
+            let tableViewController = segue.destination as! WinViewController
             
             tableViewController.model = self.model
         }

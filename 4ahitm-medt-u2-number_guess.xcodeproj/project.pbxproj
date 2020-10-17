@@ -16,6 +16,7 @@
 		A0190B5025382F6A006B95C7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190B4F25382F6A006B95C7 /* TableViewController.swift */; };
 		A0190B5225382F81006B95C7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190B5125382F81006B95C7 /* Model.swift */; };
 		A0F10B29253A73E0006E9416 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A0F10B28253A73E0006E9416 /* .gitignore */; };
+		A0F10B2B253A74E8006E9416 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F10B2A253A74E8006E9416 /* WinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A0190B4F25382F6A006B95C7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A0190B5125382F81006B95C7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A0F10B28253A73E0006E9416 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A0F10B2A253A74E8006E9416 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A0190B4925382D90006B95C7 /* Info.plist */,
 				A0190B4F25382F6A006B95C7 /* TableViewController.swift */,
 				A0190B5125382F81006B95C7 /* Model.swift */,
+				A0F10B2A253A74E8006E9416 /* WinViewController.swift */,
 			);
 			path = "4ahitm-medt-u2-number_guess";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				A0190B5225382F81006B95C7 /* Model.swift in Sources */,
 				A0190B4025382D90006B95C7 /* ViewController.swift in Sources */,
 				A0190B3C25382D90006B95C7 /* AppDelegate.swift in Sources */,
+				A0F10B2B253A74E8006E9416 /* WinViewController.swift in Sources */,
 				A0190B3E25382D90006B95C7 /* SceneDelegate.swift in Sources */,
 				A0190B5025382F6A006B95C7 /* TableViewController.swift in Sources */,
 			);
